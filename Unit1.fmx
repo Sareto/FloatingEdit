@@ -1,0 +1,79 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 398
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object edtCNPJCPF: TEdit
+    Tag = 1
+    Touch.InteractiveGestures = [LongTap]
+    Align = Top
+    TabOrder = 0
+    KeyboardType = NumberPad
+    ReturnKeyType = Done
+    MaxLength = 18
+    TextSettings.Font.Size = 16.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 30.000000000000000000
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 30.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Margins.Bottom = 30.000000000000000000
+    Size.Width = 358.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = []
+    ParentShowHint = False
+    ShowHint = False
+    OnChangeTracking = edtCNPJCPFChangeTracking
+    object imgLimpaCPF: TImage
+      MultiResBitmap.Height = 24
+      MultiResBitmap.Width = 24
+      MultiResBitmap = <
+        item
+          Width = 24
+          Height = 24
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+            F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            010049444154484BED92C90DC23010452D7A8022588A002171429C8022816658
+            5A406C3D84FF23C69AD813C749AE3CE991C8F6FC98B1DD9FAEACE013163D7CC1
+            0D8C18C10FB48ADACA4D469CA0B5B8AB15F6D05AD4470F5BF386D6A2339C43F6
+            359C631B387755635ACF115A0B2803C814EA8F307C0CC902EA1AB16407AD4991
+            A10C2713C8601D3E83D6BFA36E08EB5AA36500C3099F39E1D41D828194DCB57C
+            8434851703FCB48585827EAF852D4AEEE267D8733993F0E0434BB6D09A14AD03
+            A5E1C15BB59ED459C8350D7BCE773913AED135A227D5AA0BE43DB7E6B97386DF
+            D498B64253ABBA18D1E6DAE618917BAB727C409325BC43AB285786AFE19F14CE
+            7D01C60A387A117D4BDE0000000049454E44AE426082}
+          FileName = 
+            'C:\Users\Mauricio\Desktop\Material Design\Icones\material-design' +
+            '-icons-master\content\1x_web\ic_backspace_black_24dp.png'
+        end>
+      Align = Right
+      Margins.Left = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 318.000000000000000000
+      Size.Width = 35.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      WrapMode = Center
+    end
+    object lblCnpjCpf: TLabel
+      StyledSettings = []
+      Opacity = 0.500000000000000000
+      Margins.Left = 2.000000000000000000
+      Position.X = 2.000000000000000000
+      Size.Width = 377.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      Text = 'CNPJ/CPF'
+      TabOrder = 0
+    end
+  end
+end
