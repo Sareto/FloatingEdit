@@ -3,7 +3,8 @@ program FloattingEdit;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  Unit1 in 'Unit1.pas' {Form1};
+  Unit1 in 'Unit1.pas' {Form1},
+  FMX.CustomEdit in '..\Comuns\FMX.CustomEdit.pas';
 
 {$R *.res}
 
