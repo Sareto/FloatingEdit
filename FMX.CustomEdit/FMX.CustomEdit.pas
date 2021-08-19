@@ -143,20 +143,20 @@ begin
         ALbl.Align       := FMX.Types.TAlignLayout.None;
         ALbl.AnimateFloat('Position.Y',-25,0.2,FMX.Types.TAnimationType.&In,
           FMX.Types.TInterpolationType.Linear);
-        Sleep(100);
+        Sleep(50);
         ALbl.FontColor   := TalphaColor($FF0E98D7);
         ALbl.Font.Size   := 13;
         ALbl.Opacity     := 1;
       end);
     end
     else
-    if(ALbl.Position.Y <> 0) and (trim((sender as tedit).Text)='') Then
+    if(ALbl.Position.Y <> 0) and (trim((sender as tedit).Text)='') and not((Sender as TEdit).IsFocused) Then
     begin
       TThread.Synchronize(nil, procedure
       begin
         ALbl.AnimateFloat('Position.Y',0,0.2,FMX.Types.TAnimationType.&In,
           FMX.Types.TInterpolationType.Linear);
-        System.SysUtils.Sleep(100);
+        Sleep(50);
         ALbl.FontColor   := claBlack;
         ALbl.Font.Size   := 16;
         ALbl.Opacity     := 0.5;
